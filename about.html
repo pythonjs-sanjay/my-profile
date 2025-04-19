@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #007bff;
+    }
+
+    .about-text {
+      flex: 2 1 400px;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-links a {
+      font-size: 20px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    .back-home {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .back-home a:hover {
+      color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 26px;
+      }
+
+      .about-text {
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="about-container">
+    <div class="about-img">
+      <img src="my.jpeg" alt="Your Image" />
+    </div>
+
+    <div class="about-text">
+      <h2>Hello, I'm Sanjay Modi</h2>
+      <p>
+        I'm a passionate developer, designer, and digital enthusiast. I love creating web tools like templates, calculators, and more. My goal is to solve real problems through tech and build tools that people actually love to use.
+      </p>
+
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/yourusername" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="back-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
